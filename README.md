@@ -7,7 +7,7 @@ En el repositorio se encuentra el archivo que genera el error: *gulpfile.js*
 
 Básicamente, lo que sucede es que al generar los archivo *.txt* con los resultados de las evaluaciones realizadas con el paquete *gulp-phantom*, lo que obtenemos es un archivo en blanco, sin caracteres o cadenas de texto. Habiendo confirmado que los archivos *.js* ubicados en el directorio *phSource*, funcionan correctamente, generando mensajes en la consola, procedemos con la solución planteada a continuación.
 
-![Imagen de referencia del error] (/assets/images/Captura_ERROR.png)
+![Imagen de referencia del error](https://github.com/yoamgonzaga/gulp-phantom_ERROR/blob/812ea226dd48e0e2916658f72c337ab949c23680/Captura_ERROR.PNG)
 ## Solución
 La solución aquí planteada no pretende ser la panacea de todos los casos. Advierto que funcionó en el mío, el cual corresponde a hacer unas pruebas a un servidor local con LiveReload. Consistió en hacer una depuración, por medio de inserciones estratégicas de la instrucción *"console.log()"*. De esta manera, detecté que algunas instrucciones correspondían a paquetes que están desactualizados. Entonces, procedí a indagar y hacer los reemplazos, ubicándolos en la posición debida, la cual no necesariamente era la misma que tenían. Todas las modificaciones están comentadas, asimismo el código original lo dejé comentado, para observar mejor en qué consistió cada modificación.
 
@@ -15,4 +15,4 @@ Lo que hay que hacer es reemplazar el archivo *index.js* del paquete *gulp-phant
 
 Espero que esta solución te ayude, si es que estás en el mismo problema en el que yo me encontraba.
 
-![Imagen de referencia del error] (/assets/images/Captura_SOLUCION.png)
+![Imagen de referencia de la solución](https://github.com/yoamgonzaga/gulp-phantom_ERROR/blob/812ea226dd48e0e2916658f72c337ab949c23680/Captura_SOLUCION.PNG)
